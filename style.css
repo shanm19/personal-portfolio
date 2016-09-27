@@ -1,0 +1,280 @@
+body {
+    position: relative;
+    font-family: 'Carrois Gothic', sans-serif;
+    background-color: white;
+    color: #555;
+}
+
+p {
+    font-size: 2em;
+}
+
+h5,
+h4 {
+    line-height: 140%;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+a:hover {
+    color: skyblue;
+    text-decoration: none;
+}
+
+a:active,
+a:visited,
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+.pipe {
+    border-left: 2px solid #555;
+    padding-left: 5px;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav a:hover,
+a:active {
+    background-color: #555 !important;
+    color: skyblue !important;
+}
+
+.navbar-nav a:visited {
+    color: white;
+    background-color: #555 !important;
+}
+
+.myNav {
+    background-color: rgba(33, 45, 64, .7);
+    border-radius: 0;
+    height: 52px;
+}
+
+.myNav a {
+    color: white;
+    font-size: 2em;
+}
+
+.navbar-brand:hover {
+    color: skyblue !important;
+    background-color: #555 !important;
+}
+
+#skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skills h1 {
+    font-size: 6em;
+}
+
+#resume {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#education {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#me {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact {
+    padding-top: 50px;
+    color: white;
+}
+
+
+/* top image */
+
+.header {
+    background: url("./images/computer.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+    font-family: 'Shadows Into Light', cursive;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 12vw;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    text-shadow: 4px 4px 4px #555;
+}
+
+.header h2 {
+    font-size: 10vw;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    text-shadow: 4px 4px 4px #555;
+}
+
+
+/* skills */
+
+.dev {
+    font-size: 15em;
+    text-shadow: 4px 4px 4px #555;
+}
+
+.devCard {
+    margin-bottom: 3em;
+}
+
+
+/* resume */
+
+.resume {
+    background-color: #eee;
+}
+
+.resumeContainer {
+    margin: 1em;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px #555;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.resumeContainer h2 {
+    font-size: 2.55em;
+}
+
+.jobCard {
+    margin-top: 2em;
+}
+
+
+/* education */
+
+.school h2 {
+    font-size: 3em;
+}
+
+
+/* me */
+
+.imageRow {
+    padding: 1em;
+    padding-top: 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/* contact */
+
+.contact {
+    height: 800px;
+    background: url("./images/contact.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fa {
+    color: white;
+    font-size: 1.5em;
+    margin-right: .5em;
+}
+
+.fa:hover {
+    color: skyblue;
+}
+
+.contactCard {
+    background-color: rgba(33, 45, 64, .7);
+    width: 300px;
+}
+
+
+/* download */
+
+.download {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgba(33, 45, 64, .7);
+    color: white;
+}
+
+
+/* animation */
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translate3d(-130%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translate3d(300%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        float: left;
+    }
+}
